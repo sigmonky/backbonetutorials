@@ -15,8 +15,7 @@ define([
     render: function(){
       
       var data = {
-        projects: this.collection.models,
-        _: _ 
+        projects: this.collection.models
       };
 
       var compiledTemplate = _.template( projectsListTemplate, data );
