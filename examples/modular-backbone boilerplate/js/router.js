@@ -3,8 +3,8 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'views/home/HomeView'
-], function($, _, Backbone, HomeView) {
+  'views/boilerplate/BoilerPlateView'
+], function($, _, Backbone, BoilerPlateView) {
   
   var AppRouter = Backbone.Router.extend({
     routes: {
@@ -23,8 +23,8 @@ define([
      
        // We have no matching route, lets display the home page 
         console.log("route:defaultAction");
-        var homeView = new HomeView();
-        homeView.render();
+        var boilerplateView = new BoilerPlateView();
+        boilerplateView.render();
     });
 
 
